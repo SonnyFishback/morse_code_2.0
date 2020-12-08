@@ -64,11 +64,22 @@ const textToMorseButton = document.querySelector("#text_morse");
 // Add event listiners.
 textToMorseButton.addEventListener( "click", () => {
     translateTextToMorse();
-    console.log(inputTextarea.value, outputTextarea.value);
 })
 
 
 function  translateTextToMorse(){
-    console.log("Translate text")
+    const input = inputTextarea.value.toLowerCase();
+    let output = "";
+
+    if(input){
+        for(let i = 0; i < input.length; i++){
+            output += morse_code_alphabet[input[i]]
+        }
+    }
+    else{
+        console.log("No text to translate. Please try again.");
+    }
+    console.log(output);
+    outputTextarea.value = output;
 }
 
