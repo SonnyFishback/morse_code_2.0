@@ -1,3 +1,7 @@
+*{
+    font-family: 'JetBrains Mono', monospace;
+}
+
 html,
 body{
     margin: 0;
@@ -7,34 +11,49 @@ body{
 header{
     height: 10vh;
     width: 100vw;
-    background-color: grey;
+    background-color: #FDF100;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-bottom: solid #68BBEF 3px;
 }
 
 h1{
     margin: 0;
     padding: 0;
+    color: #68BBEF;
+}
+
+h2{
+    margin-left: 30px;
+    color: #68BBEF;
 }
 
 main{
     height: 90vh;
     width: 100vw;
-    background-color: lightgrey;
+    background-color: white;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background: #68BBEF;
+    color: #FDF100;
 }
 
 footer{
     height: 30vh;
     width: 100vw;
-    background-color: white;
+    background-color:#68BBEF;
 }
 
 #input_output_div{
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 90%;
     width: 100vw;
     /* border: solid black 1px; */
 }
@@ -44,7 +63,12 @@ footer{
     width: 80%;
     margin: 0 auto;
     border: solid black 1px;
-    border-radius: 5px;
+    outline: solid #68BBEF 2.5px;
+    border: none; 
+}
+
+#input_output_div textarea:focus {
+    outline: solid #09a1ff 2.5px;
 }
 
 #trasnlation_type_buttons_div{
@@ -56,3 +80,24 @@ footer{
 #trasnlation_type_buttons_div button{
     margin: 20px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 403px) {
+    header h1{
+        font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    header h1{
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 645px) {
+    button{
+        padding: 10px;
+        font-size: 10px;
+    }
+  }
