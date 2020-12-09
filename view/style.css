@@ -48,6 +48,15 @@ footer{
     height: 30vh;
     width: 100vw;
     background-color:#68BBEF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    margin: 10px;
 }
  
 #input_output_div{
