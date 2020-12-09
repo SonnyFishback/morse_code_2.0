@@ -49,7 +49,7 @@ footer{
     width: 100vw;
     background-color:#68BBEF;
 }
-
+ 
 #input_output_div{
     display: flex;
     flex-direction: column;
