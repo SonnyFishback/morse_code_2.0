@@ -91,6 +91,19 @@ footer a{
     margin: 20px;
 }
 
+#flash_modal{
+    border: solid black 1px;
+    background-color: #fff;
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35vh;
+    margin-left: -35vw;
+    /* display: none; */
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 403px) {
